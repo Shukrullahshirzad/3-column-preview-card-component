@@ -1,0 +1,119 @@
+:root{
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+--very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+body{
+    background-color: var(--very-light-gray);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family:'Lexend Deca', sans-serif;;
+    font-size: 15px;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+    object-position: center;
+    
+}
+.card{
+    padding: 35px;
+    width: 150px;
+    height: 300px;
+}
+.card img{
+    width: 30%;
+}
+.card h1{
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;;
+}
+.card p{
+    margin-bottom: 20px;
+    color: var(--transparent-white);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.9px;
+}
+.sedans{
+    background-color:var(--bright-orange);
+}
+.sedans .buttons{
+    color: var(--bright-orange);
+}
+.suvs{
+    background-color:var(--very-dark-cyan);
+}
+.suvs .buttons{
+    color: var(--very-dark-cyan);
+}
+.luxury{
+    background-color: var(--dark-cyan);
+}
+.luxury .buttons{
+    color: var(--dark-cyan);
+}
+.buttons{
+    border: inherit;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top:30px;
+    transition-property: background-color, border, color;
+    transition-duration: 0.2s;
+}
+.buttons:hover{
+    background-color: transparent;
+    border: 1px var(--transparent-white) solid;
+    color: var(--transparent-white);
+}
+
+
+@media (max-width: 375px) {
+    body{
+        background-color: var(--very-light-gray);
+        margin: 0;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        font-family:'Lexend Deca', sans-serif;;
+        font-size: 15px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: auto;
+        overflow: hidden;
+        margin: 30px 0px;
+        
+
+    }
+    .card{
+        padding: 35px;
+        width: 150px;
+        height: 250px;
+    }
+    .buttons{
+        
+        margin-top:0px;
+        
+    }
+    
+}
+
